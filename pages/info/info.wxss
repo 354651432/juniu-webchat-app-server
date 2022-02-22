@@ -1,0 +1,14 @@
+.buttons {
+    display: flex;
+}
+
+.img-view {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.img-item {
+    display: flex;
+    flex-direction: column;
+}

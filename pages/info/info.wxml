@@ -1,0 +1,18 @@
+<view class="main">
+    <view class="buttons">
+        <button bindtap="addImg" type="primary">添加图片</button>
+        <button bindtap="submit" type="primary">提交</button>
+        <button bindtap="reset" type="primary">重置</button>
+    </view>
+    <label for="">说明</label>
+    <textarea model:value="{{text}}"></textarea>
+    <label for="">图片</label>
+    <view wx:for="{{images}}" wx:key="path" class="img-item">
+        <image src="{{item.path}}"></image>
+        <view class="img-view"></view>
+        <text>size:{{item.size}}</text>
+        <button bindtap="removeImg" data-path="{{item.path}}" size="mini" type="warn">
+            删除
+        </button>
+    </view>
+</view>

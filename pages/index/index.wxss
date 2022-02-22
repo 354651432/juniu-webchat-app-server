@@ -1,0 +1,19 @@
+.main {
+  padding: 20rpx;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info>text {
+  width: 500rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+button {
+  background-color: transparent;
+}
